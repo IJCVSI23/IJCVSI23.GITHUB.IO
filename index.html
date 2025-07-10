@@ -32,7 +32,7 @@
 
         <div class="section head">
             <h1> Call for Papers: IJCV Special Issue</h1>
-            <h1> Open-World Visual Recognition</h1>
+            <h1> Ensuring Trustworthiness in Open-World Visual Recognition</h1>
 
             <!--            <div class="authors">-->
             <!--                <a >Jing Wang</a><sup>1,2</sup>&nbsp;-->
@@ -62,43 +62,27 @@
         <div class="section abstract">
             <h2>Introduction</h2>
             <br>
-            <p>Visual recognition is a critical task in computer vision, which has gained significant attention in recent years due to its numerous applications in various
-                fields, including image classification, object detection, semantic segmentation,
-                and instance retrieval for autonomous driving and intelligent surveillance. Over
-                the past decade, deep learning techniques and large-scale datasets have contributed to remarkable advancements in the performance of visual recognition
-                systems. However, existing visual models are often limited by their closed-world
-                assumptions, where all possible classes and domains are known in advance, and
-                all data is given at once. Such assumptions are not applicable in practical scenarios, where novel or previously unseen classes and domains can arise, and
-                data may be continually coming or decentralized due to data privacy concerns.
-                One example of such a scenario is an autonomous vehicle encounters new traffic
-                patterns, a medical AI system detects new diseases, or an intelligent system encounters a criminal wearing a new type of disguise or clothing. Another example
-                is when a healthcare organization collects patient data from multiple hospitals,
-                and the data may be decentralized and continually coming in due to privacy
-                concerns. Moreover, the challenge of multi-modality poses another obstacle, as
-                visual recognition systems must be capable of integrating and handling data
-                from multiple sources, such as images, videos, texts, and 3D models. Therefore,
-                new methods and techniques are needed to address the challenges of open-world
-                visual recognition and enable visual recognition systems to perform effectively
-                in practical scenarios.</p>
+            <p>Visual recognition is a fundamental task in computer vision, with applications ranging from autonomous driving to healthcare. However, conventional visual recognition methods are often limited to recognizing a fixed set of classes, which can lead to significant challenges in real-world applications. Therefore, open-world visual recognition has has emerged as a promising solution to address these challenges. However, although recent efforts have focused on improving the robustness of visual recognition systems in open-world setting, they still struggle with several key trustworthiness issues, which include but are not limited to: Unrobustness with Dynamic Environments: Existing visual recognition methods are often vulnerable to dynamic environments, such as varying lighting conditions, occlusions, and weather changes. These challenges can lead to significant performance degradation in real-world applica­tions, particularly in safety-critical domains like autonomous driving. Lack of Interpretability: Deep models (such as CNNs and transformers) are often considered black boxes, making it difficult to understand their decision-making processes. This lack of inter­pretability can hinder trust in the system, especially in high-stakes applications like healthcare and security. Ethics and Fairness Bias: If there is social bias (such as sample imbalance in gender, race, and region) in the training data, the model may solidify the bias into the recognition results. For example, the recognition accuracy of face recognition systems for people with darker skin tones is significantly lower than that for people with lighter skin tones (a previous study showed that the error gap is more than 10%). Privacy and Security Risks: In scenarios involving faces, medical images, biological features, etc., if the original data is not properly protected, there is a risk of leakage or abuse. For example, if facial data from security cameras is illegally obtained, it may lead to identity theft. On the other hand, some recent studies have shown that attackers can infer the characteristics of training data from model outputs and even reconstruct the original images (such as the abuse of generative adversarial networks), threatening data privacy. Reliability and Consistency: The performance of existing visual recognition methods can be inconsistent across different domains or scenarios. For example, a model trained on synthetic data may not perform well on real-world data. This inconsistency can lead to unreliable results in ap­plications where accuracy is critical, such as autonomous driving and medical diagnosis. Moreover, when fusing sensor data (e.g., images, radar, and infrared), issues like time asynchrony, spatial calibration errors, or data conflicts may result in decision-making errors. Insufficient Dynamic Adaptability: Conventional visual models assume that test data comes from a known set of categories. In the open world, new objects (such as new car models and new species) constantly appear. The model lacks the ability to “recognize the unknown” and may misclassify them as known categories. On the other hand, when the computing power of edge devices (such as drones and mobile phones) is limited, model compression (such as quantization and pruning) may lead to a decrease in robustness and an increase in the misjudgment rate in low-power mode.</p>
         </div>
 
         <div class="section abstract">
             <h2>Aims&Scope</h2>
             <br>
-            <p>This special issue invites innovative research papers that aim to address these
-                challenges and propose novel techniques for open-world visual recognition. Potential topics of interest include, but are not limited to:</p>
-            <li><b>Novel Class Discovery</b>, where the goal is to discover underlying semantic clusters for unlabeled data including unseen classes</li>
-            <li><b>Open-Set Semi-Supervised Learning</b>, where the system should learn from both labeled and unlabeled data, and distinguish between known and unknown classes during testing</li>
-            <li><b>Open Vocabulary Visual Learning</b>, where the goal is to train a model that can recognize a broader range of visual concepts, including new and rare ones, using a limited pre-defined set of categories</li>
-            <li><b>Out-of-Distribution Detection</b>, where the goal is to  distinguish between in-distribution and out-of-distribution samples</li>
-            <li><b>Robust/Adversarial Learning</b>, where the goal is to improve the model's robustness to distributional shifts, such as adversarial perturbations and corruptions</li>
-            <li><b>Open-World Domain Adaptation</b>, where the goal is to adapt/generalize the model to target domains under open-world scenarios, such as universal, source-free, test-time domain adaptation, and domain generalization</li>
+            <p>This special issue invites innovative research papers that aim to address these challenges and propose novel techniques for ensuring trustworthiness in open-world visual recognition. Potential topics of interest include, but are not limited to:</p>
+            <li><b>Robustness enhancement.</b> This includes methods for improving the robustness of visual recognition systems against adversarial attacks, catastrophic forgetting, domain shifts, and other challenges. </li>
+            <li><b>Interpretability and explainability.</b> This includes techniques for making visual recognition systems more interpretable and explainable, enabling users to understand the decision-making process of these systems.</li>
+            <li><b>Ethical considerations and fairness.</b> This includes methods for ensuring that visual recognition systems are fair and unbiased, addressing issues related to social bias in training/test data.</li>
+            <li><b>Privacy-preserving techniques.</b> This includes methods for protecting sensitive data in visual recog­nition systems, ensuring that user privacy is maintained.</li>
+            <li><b>Dynamic adaptability. </b> This includes techniques for enabling visual recognition systems to adapt to new classes and domains in real-time, ensuring that they remain effective in dynamic environments.</li>
+            <li><b>Evaluation criteria and benchmarks.</b> This includes the development of new evaluation criteria and benchmarks for assessing the performance of visual recognition systems in open-world scenarios, ensuring that they are robust, interpretable, and fair.</li>
             <p></p>
             <p>Moreover, this special issue also welcomes papers that focus on:</p>
-            <li><b>Developing new techniques for continual learning, federated learning and multi-modality learning</b> in the context of open-world visual recognition</li>
-            <li><b>Building datasets and benchmarks</b> for facilitating the study of open-world visual recognition</li>
+            <li>Developing new techniques for continual learning, federated learning and multi-modality learning in the context of open-world visual recognition</li>
+            <li>Exploring the use of large vision-language models or vision foundation models for open-world visual recognition tasks</li>
+            <li>Encourage interdisciplinary integration by incorporating perspectives from fields such as ethics, law, and sociology.</li>
+            <li>New applications of relational generative models (such as diffusion models) in data enhancement and privacy protection. </li>
             <p></p>
-            We encourage submissions that cover a broad range of visual recognition tasks, including but not limited to image classification, object detection, semantic segmentation, action recognition and pose estimation.
+            We encourage submissions that cover a broad range of visual recognition tasks, including but not limited to image classification, object detection, semantic segmentation, action recognition and pose estimation. This special issue will provide a platform for researchers to share their latest findings and contribute to the advancement of trustworthy visual recognition. The contributions in this special is­sue could significantly benefit society by enabling more robust and reliable visual recognition systems, enhancing public safety and security, social impact, and increasing the efficiency of industrial and com­mercial applications. 
         </div>
 
 
@@ -112,37 +96,43 @@
         <div class="section abstract">
             <h2>Important Dates</h2>
             <br>
-            <p style="color: red;"><b>Notification: Due to ECCV 2024's deadline and high submission volume, decisions of some manuscripts are delayed. We apologize and aim to expedite the process, with final notifications by March 10.</b></p> 
-            <li> Submission deadline: <del>October 15, 2023</del> extended to 15 December 2023 </li>
-            <li> First review notification: February 15, 2024</li>
-            <li> Revised submission deadline: April 15, 2024</li>
-            <li> <del> Final review notification: May 15, 2024</del> extended to June 15, 2024 </li>
-            <li> <del> Final manuscript due: June 15, 2024</del>  extended to July 15, 2024 </li>
-            <li>Publication date: Summer 2024</li>
+            <li> Submission deadline: December 15, 2025 </li>
+            <li> First review notification: February 15, 2026</li>
+            <li> Revised submission deadline: April 15, 2026</li>
+            <li> Final review notification: May 15, 2026</li>
+            <li> Final manuscript due: June 15, 2026</li>
+            <li>Publication date: Summer 2026</li>
         </div>
 
 
         <div class="section abstract">
             <h2>Guest Editors</h2>
             <br>
-            <li>  <a href="https://zhunzhong.site">Zhun Zhong</a>: Assistant Professor, University of Trento, Italy, <a href = "mailto: zhunzhong007@gmail.com">zhunzhong007@gmail.com</a></li>
 
-            <li>  <a href="https://lynnhongliu.github.io/hliu">Hong Liu</a>, Fellowship Researcher, National Institute of Informatics, Japan, <a href = "mailto: hliu@nii.ac.jp">hliu@nii.ac.jp</a></li>
+            <li>  <a href="https://lynnhongliu.github.io/hliu">Hong Liu</a>, The University of Osaka, Japan, <a href = "mailto: hliu@ids.osaka-u.ac.jp">hliu@ids.osaka-u.ac.jp</a></li>
+                
+            <li>  <a href="https://zhunzhong.site">Zhun Zhong</a>: Hefei University of Technology, China, <a href = "mailto: zhunzhong007@gmail.com">zhunzhong007@gmail.com</a></li>
 
-            <li> <a href="https://ycui.me">Yin Cui</a>, Senior Research Scientist, Google, USA, <a href = "mailto:  yincui@google.com"> yincui@google.com</a></li>
+            <li>  <a href="https://jiwei0523.github.io/">Wei Ji</a>: Nanjing University, China <a href = "mailto: weiji@nju.edu.cn">weiji@nju.edu.cn</a></li>
 
-            <li>  <a href="http://www.satoh-lab.nii.ac.jp">Shin'ichi Satoh</a>: Professor, National Institute of Informatics, Japan, <a href = "mailto: satoh@nii.ac.jp">satoh@nii.ac.jp</a></li>
-
+            <li>  <a href="https://zzeng.me/">Zhe Zeng</a>: University of Virginia, USA, <a href = "mailto: zhez@virginia.edu">zhez@virginia.edu</a></li>
+                
             <li>  <a href="https://disi.unitn.it/~sebe">Nicu Sebe</a>: Professor, University of Trento, Italy, <a href = "mailto: niculae.sebe@unitn.it">niculae.sebe@unitn.it</a></li>
+                
+            <li>  <a href="https://www.comp.nus.edu.sg/cs/people/chuats/">Tat-Seng Chua</a>: National University of Singapore, Singapore, <a href = "mailto: dcscts@nus.edu.sg">dcscts@nus.edu.sg</a></li>
 
-            <li>  <a href="http://faculty.ucmerced.edu/mhyang">Ming-Hsuan Yang</a> : Professor, University of California at Merced, USA, <a href = "mailto: mhyang@ucmerced.edu">mhyang@ucmerced.edu</a></li>
+            <li>  <a href="https://www.wjscheirer.com/">Walter Scheirer</a>: University of Notre Dame, USA, <a href = "mailto: walter.scheirer@nd.edu">walter.scheirer@nd.edu</a></li>
+                
+            <li>  <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a>: University of Modena and Reggio Emilia, Italy, <a href = "mailto: rita.cucchiara@unimore.it">rita.cucchiara@unimore.it</a></li>
+
+            <li>  <a href="http://faculty.ucmerced.edu/mhyang">Ming-Hsuan Yang</a> : University of California at Merced, USA, <a href = "mailto: mhyang@ucmerced.edu">mhyang@ucmerced.edu</a></li>
 
         </div>
 
         <div class="section method">
             <h2>Concact</h2>
             <br>
-            If you have any question related to this IJCV SI, please contact <a href="https://zhunzhong.site">Zhun Zhong</a> or <a href="https://lynnhongliu.github.io/hliu">Hong Liu</a>.
+            If you have any question related to this IJCV SI, please contact <a href="https://lynnhongliu.github.io/hliu">Hong Liu</a> or <a href="https://zhunzhong.site">Zhun Zhong</a> or <a href="https://jiwei0523.github.io/">Wei Ji</a>.
         </div>
 
 </body>
